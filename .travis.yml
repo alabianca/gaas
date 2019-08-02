@@ -1,0 +1,8 @@
+sudo: required
+services: docker
+
+deploy:
+  provider: heroku
+  api_key:
+    secure: "$HEROKU_TOKEN"
+  app: "$HEROKU_APP_NAME"

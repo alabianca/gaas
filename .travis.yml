@@ -1,6 +1,9 @@
 sudo: required
 services: docker
 
+script:
+  echo "About to deploy"
+
 deploy:
   provider: heroku
   api_key:

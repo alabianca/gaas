@@ -16,7 +16,7 @@ const server = http.createServer((req, res) => {
         let html = data.toString();
         const index = getRandomInt(names.length);
         html = html.replace("{{name}}", names[index]);
-        res.setHeader("Content-Type", "application/html");
+        res.setHeader("Content-Type", "text/html");
         res.write(html);
         res.end()
     })
